@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex2</title>
+    <style>
+        body {
+            background-color: rgba(171, 205, 218, 0.808);
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(55, 55, 141);
+            text-decoration: none;
+            margin-top: 40px;
+        }
+
+        .subs {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 0px;
+            color: grey;
+            margin-bottom: 100px;
+        }
+
+        .card {
+            max-width: 333px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            border: 0px;
+            margin: 13px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .topic {
+            color: rgb(43, 122, 153);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .name{
+            font-size: 14px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Community Programs</h1>
+    <p class="subs">Open to all pro-live classes on Youtube for free.</p>
+    <div class="container">
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6448ca86508654220671ad2d.jpg" alt="#" />
+            <p class="topic">
+                Masterclass Understanding APIs in Web Development with RoadMap
+            </p>
+            <p class="name">Hitesh Choudhary</p>
+            <p><b>FREE</b></p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64426c32508654fb0f7168bd.jpg" alt="#" />
+            <p class="topic">
+                Masterclass Cracking The Coding Interview LinkedList
+            </p>
+            <p class="name">Vishwa Mohan</p>
+            <p><b>FREE</b></p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6463025b6977cc64d3ddf8b7.jpg" alt="#" />
+            <p class="topic">MasterClass Important of DSA in Modern Programming</p>
+            <p class="name">Priya Bhatia</p>
+            <p><b>FREE</b></p>
+        </div>
+    </div>
+</body>
+
+</html>

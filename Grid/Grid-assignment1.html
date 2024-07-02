@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        .container {
+            margin: auto;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+            gap: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            align-items: center;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav img{
+            width: 50px;
+        }
+        a{
+            padding-right: 50px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        a:hover{
+            color: aquamarine;
+            font-weight: bold;
+            transition: font-weight 0.5s, color 0.5s;
+
+        }
+        .nav-button{
+            background-color: white;
+            border: 1.5px solid rgb(5, 255, 5);
+            color: rgb(5, 255, 5);
+            margin: 0px;
+            margin-left: 60%;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 11px 60px;
+            border-radius: 15px;
+            
+        }
+        .nav-button:hover{
+            background-color: rgb(5, 255, 5);
+            color: rgb(255, 255, 255);
+            transition: background-color 1.5s, color 0.3s;
+            font-weight: bold;
+        }
+        .text {
+            padding: 0px 50px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 30px 0px;
+        }
+
+        p {
+            font-size: 17px;
+            color: rgb(34, 34, 63);
+        }
+
+        button {
+            margin: 30px 0px;
+            padding: 10px 50px;
+            font-size: 20px;
+            color: aliceblue;
+            background-color: black;
+        }
+
+        .image {
+            background-color: yellow;
+            max-height: 90vh;
+            height: 100%;
+        }
+
+        .image img {
+            height: 100%;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+            alt="logo">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div>
+            <button class="nav-button">Login</button>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="text">
+            <h1>Healthy Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam soluta ut quas corporis earum,
+                dolore dolorum ad non nobis tempora, quasi reprehenderit animi nisi ex, ipsum eius? Vitae laboriosam,
+                iusto ipsam impedit natus expedita ipsum, voluptatibus dolorem ut laudantium accusantium?</p>
+            <button>Read More</button>
+        </section>
+        <section class="image">
+            <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY="
+                alt="healthy food">
+        </section>
+    </div>
+</body>
+
+</html>
