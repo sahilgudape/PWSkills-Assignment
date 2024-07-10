@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Counter</h2>
+    <span><button onclick="plus()">+</button></span>
+    <span id="num">0</span>
+    <span><button onclick="minus()">-</button></span>
+
+    <script>
+        const num = document.getElementById('num')
+
+        function plus() {
+            num.innerHTML = Number(num.innerHTML) + 1;
+        }
+
+        function minus() {
+            if (Number(num.innerHTML)>0){
+                num.innerHTML = Number(num.innerHTML) - 1;
+            } else {
+                alert('Counter cannot go below 0')
+            }
+        }
+    </script>
+</body>
+</html>
