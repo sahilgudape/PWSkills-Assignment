@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+<body>
+    <h1 id="c">Error handling in JavaScript</h1>
+    <script>
+        const c = document.getElementById('c');
+        fetch('https://jsonplaceholder.typicode.com/posts/123456789')
+        .then((response)=>{
+            if (!response.ok) {
+                const a = c.innerHTML('there is an error')
+                throw new Error('network response was not ok')
+            }
+            return response.json()
+            console.log(a)
+        })
+    </script>
+</body>
+</html>
