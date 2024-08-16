@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="httpsfonts.googleapis.comcss2family"
+      ="Material+Symbols+Outlinedopsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .symbols {
+        font-variation-settings: FILL 0, wght 400, GRAD 0, opsz 48;
+        color: #fff;
+      }
+
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      nav {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        background-color: #242b2e;
+      }
+
+      .large-screens {
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+        margin: 0px 50px;
+      }
+
+      .small-screens {
+        width: 100%;
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .large-screens img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .small-screens img {
+        width: 40px;
+      }
+
+      .links {
+        display: flex;
+        justify-content: center;
+      }
+
+      .links a {
+        text-decoration: none;
+        font-size: 18px;
+        margin-right: 25px;
+        color: #fff;
+      }
+
+      .links a:hover {
+        scale: 1.1;
+        color: #76b5d3;
+      }
+
+      .large-screens button {
+        border: 0;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #0072e1;
+        padding: 10px 40px;
+        margin: 10px 0px;
+        float: right;
+      }
+
+      .large-screens button:hover {
+        scale: 1.1;
+      }
+
+      .small-screens .symbols {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        cursor: pointer;
+      }
+
+      .hero-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1400px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .hero-sec video {
+        max-width: 700px;
+        width: 100%;
+        margin-right: 20px;
+      }
+
+      .text-sec {
+        max-width: 600px;
+        width: 100%;
+        margin-left: 40px;
+      }
+
+      .text-sec img {
+        width: 400px;
+      }
+
+      .text-sec h3 {
+        font-size: 2rem;
+      }
+
+      .text-sec h1 {
+        font-size: 3rem;
+        color: #41a1ff;
+      }
+
+      .text-sec h4 {
+        font-size: 1.3rem;
+        color: #41a1ff;
+      }
+
+      .text-sec p {
+        font-size: 18px;
+        margin-top: 50px;
+        max-width: 500px;
+      }
+      footer{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        margin-top: 60px;
+      }
+      .dark{
+        background-color: #060607;
+        align-items: center;
+        display: none;
+        text-align: center;
+        height: 100%;
+        justify-content: center;
+      }
+      .dark h1{
+        color: #0072e1;
+      }
+      .dark h3{
+        color: #ffffffcb;
+        font-size: 1.5rem;
+      }
+      
+      .light{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        justify-content: center;
+      }
+      .light h1{
+        color: #0072e1;
+        font-size: 2.5rem;
+      }
+      .light h3{
+        font-size: 2rem;
+      }
+      @media screen and (min-width: 800px) {
+        .large-screens {
+          display: flex;
+        }
+
+        .small-screens {
+          display: none;
+        }
+
+        .hero-sec {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0px 0px;
+        }
+
+        .hero-sec video {
+          width: 400px;
+          height: 400px;
+        }
+        .dark{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        .light{
+            display: none;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <section class="large-screens">
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt="Logo"
+        />
+        <div class="links">
+          <a href="#">Home</a><a href="#">Blog</a><a href="#">About</a
+          ><a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+      </section>
+      <section class="small-screens">
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+          alt="Logo"
+        />
+        <div>
+          <span class="symbols">Menu</span>
+        </div>
+      </section>
+    </nav>
+    <main class="hero-sec">
+      <div class="text-sec">
+        <h3>Say Hi To</h3>
+        <h1>One Card</h1>
+        <h4>Co-branded Card Issuers</h4>
+        <img
+          src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+          alt="banks"
+        />
+        <p>
+          India's best metal credit card. Built with full-stack tech. Backed by
+          the principles of simplicity, transparency, and giving back control to
+          the user.
+        </p>
+      </div>
+      <video loop autoplay="autoplay" controls>
+        <source
+          src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </main>
+    <footer>
+      <div class="dark">
+        <h1>No Hidden Fees Ever</h1>
+        <div class="dtext">
+          <h3>No Joining Fees.</h3>
+          <h3>No Annual Fees.</h3>
+          <h3>No Rewards Redemption Fees.</h3>
+        </div>
+      </div>
+      <div class="light">
+        <h1>No Hidden Fees Ever</h1>
+        <div class="ltext">
+          <h3>No Joining Fees.</h3>
+          <h3>No Annual Fees.</h3>
+          <h3>No Rewards Redemption Fees.</h3>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
