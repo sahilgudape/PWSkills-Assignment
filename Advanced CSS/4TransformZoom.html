@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 300px;
+            width: 400px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border: 3px solid;
+            transition: all 0.5s ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpoS_p0x2jc1NqYVy4QA022mF5VCMLaPXiZUr06mdh_YMXAwmoc1XgNdCr-Q&s" alt="Landscape">
+    </div>
+</body>
+</html>

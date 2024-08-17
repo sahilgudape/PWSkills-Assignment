@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Element</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .card{
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            background-image: linear-gradient(to right top, rgb(165, 196, 243), rgb(0, 47, 255));
+            border: 3px solid black;
+            border-radius: 10px;
+            transition: all 0.5s ease-in-out;
+        }
+        .card:hover{
+            transform: rotate(-45deg);
+        }
+        .date{
+            display: flex;
+            justify-content: space-between;
+        }
+        .date p{
+            color: white;
+        }
+        button{
+            background-image: linear-gradient(to right, rgb(0, 255, 234), lightgreen);
+            text-align: center;
+            padding: 10px 0px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="date">
+            <h2>#01</h2>
+            <p>Created On: 17/09/2024</p>
+        </div>
+        <div>
+            <h2>Important Dates</h2>
+            <ul>
+                <li>January 26 - Republic Day</li>
+                <li>August 15 - Independence Day</li>
+                <li>August 29 - National Sports Day</li>
+                <li>February 19 - Shibaji Maharaj Jayanti</li>
+            </ul>
+            <button>Mark As Done</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Button</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 20px 50px;
+            background-image: linear-gradient(to right, lightblue, blue);
+            border: none;
+            border-radius: 10px;
+            animation: bounce infinite 1s alternate;
+        }
+        @keyframes bounce{
+            0%, 100%{
+                transform: translateY(-25%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50%{
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button>
+        <a href="https://pwskills.com">Click Me To Visit PWSkills</a>
+    </button>
+</body>
+</html>

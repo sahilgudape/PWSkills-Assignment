@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur Image</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div{
+            height: 300px;
+            width: 500px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border: 3px solid;
+            transition: all 0.3s ease-in-out;
+        }
+        img:hover{
+            filter: grayscale();
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Hover To Reveal The Image</u></h1>
+    <div>
+        <img src="https://wallpapers.com/images/hd/bill-gates-smile-vaga2ec95vycqimt.jpg" alt="Bill Gates">
+    </div>
+</body>
+</html>
